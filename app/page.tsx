@@ -65,7 +65,10 @@ export default function Home() {
       <main>
         {/* HERO */}
         <section className="hero" id="home">
-          <div className="hero-grid" />
+          <div
+  className="hero-image"
+  style={{ backgroundImage: "url('/hero.jpg')" }}
+/>
 
           <div className="container hero-content">
             <div className="kicker">Titan X Energy</div>

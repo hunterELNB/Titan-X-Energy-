@@ -66,7 +66,7 @@ export default function Home() {
         {/* HERO */}
         <section className="hero" id="home">
           <div
-  className="hero-image"
+  className="hero-image "
   style={{ backgroundImage: "url('/hero.jpg')" }}
 />
 

@@ -58,9 +58,9 @@ export default function Home() {
       {/* NAVIGATION */}
       <header className="nav">
         <div className="container nav-inner">
-          <a href="#home" className="brand">
-            TITAN X <span>ENERGY</span>
-          </a>
+<a href="#home" className="brand">
+  <img src="/logo.png" alt="Titan X Energy" className="brand-logo" />
+</a>
 
           <nav className="nav-links">
             <a href="#refining">REFINING</a>

@@ -146,6 +146,12 @@ NAVIGATION
   white-space: nowrap;
 }
 
+.brand-logo {
+  display: block;
+  width: 150px;
+  height: auto;
+}
+
 .brand span {
   color: var(--accent);
 }

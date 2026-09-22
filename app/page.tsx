@@ -123,7 +123,7 @@ export default function Home() {
 
           <div className="business-grid">
             <a href="#refining" className="business-card">
-              <span className="card-number">01</span>
+              <span className="card-number"></span>
               <h3>MODULAR REFINING</h3>
               <strong>Heavy Oil → Marketable Fuels</strong>
               <p>
@@ -134,7 +134,7 @@ export default function Home() {
             </a>
 
             <a href="#wellhead-gas" className="business-card">
-              <span className="card-number">02</span>
+              <span className="card-number"></span>
               <h3>WELLHEAD GAS</h3>
               <strong>Natural Gas → CNG · LPG/NGL · Power</strong>
               <p>
@@ -157,7 +157,7 @@ export default function Home() {
 
           <div className="flow-grid">
             <div className="flow-item">
-              <span>01</span>
+              <span></span>
               <h3>CRUDE OIL</h3>
               <p>Modular Refining</p>
               <strong>Diesel / Naphtha / Fuels</strong>
@@ -166,7 +166,7 @@ export default function Home() {
             <div className="flow-arrow">→</div>
 
             <div className="flow-item">
-              <span>02</span>
+              <span></span>
               <h3>NATURAL GAS</h3>
               <p>Gas Processing</p>
               <strong>CNG / LPG-NGL / Distributed Power</strong>
@@ -175,7 +175,7 @@ export default function Home() {
             <div className="flow-arrow">→</div>
 
             <div className="flow-item">
-              <span>03</span>
+              <span></span>
               <h3>DIGITAL ENERGY</h3>
               <p>Digital Twin + AIoT</p>
               <strong>Monitoring / Control / Optimization / O&M</strong>
@@ -188,7 +188,7 @@ export default function Home() {
       <section className="section" id="refining">
         <div className="container">
           <div className="section-heading">
-            <span className="eyebrow">01 · MODULAR REFINING</span>
+            <span className="eyebrow">MODULAR REFINING</span>
             <h2>Refinery Economics at the Source</h2>
             <p>
               Titan X Energy focuses on the modularization, standardization,
@@ -244,7 +244,7 @@ export default function Home() {
       <section className="section dark-section" id="wellhead-gas">
         <div className="container">
           <div className="section-heading">
-            <span className="eyebrow">02 · WELLHEAD GAS</span>
+            <span className="eyebrow">WELLHEAD GAS</span>
             <h2>Wellhead Gas Monetization</h2>
             <p>
               From wellhead gas to revenue. Titan X Energy develops modular
@@ -265,7 +265,7 @@ export default function Home() {
 
           <div className="three-card-grid">
             <article className="solution-card">
-              <span className="card-number">01</span>
+              <span className="card-number"></span>
               <h3>CNG</h3>
               <h4>Compressed Natural Gas</h4>
               <p>
@@ -276,7 +276,7 @@ export default function Home() {
             </article>
 
             <article className="solution-card">
-              <span className="card-number">02</span>
+              <span className="card-number"></span>
               <h3>LPG / NGL</h3>
               <h4>Natural Gas Liquids Recovery</h4>
               <p>
@@ -287,7 +287,7 @@ export default function Home() {
             </article>
 
             <article className="solution-card">
-              <span className="card-number">03</span>
+              <span className="card-number"></span>
               <h3>DISTRIBUTED POWER</h3>
               <h4>Power at the Source</h4>
               <p>
@@ -363,7 +363,7 @@ export default function Home() {
       <section className="section dark-section" id="solutions">
         <div className="container">
           <div className="section-heading">
-            <span className="eyebrow">03 · SOLUTIONS</span>
+            <span className="eyebrow">SOLUTIONS</span>
             <h2>Solutions Built Around Customer Scenarios</h2>
             <p>
               Customers provide the resource conditions, logistics
@@ -420,7 +420,7 @@ export default function Home() {
       <section className="section" id="services">
         <div className="container">
           <div className="section-heading">
-            <span className="eyebrow">04 · SERVICES</span>
+            <span className="eyebrow">SERVICES</span>
             <h2>Core Capabilities &amp; Services</h2>
             <p>
               Titan X Energy is positioned as a technology-integration and
@@ -431,7 +431,7 @@ export default function Home() {
 
           <div className="service-grid">
             <article className="service-card">
-              <span>01</span>
+              <span></span>
               <h3>Engineering &amp; Technical Consulting</h3>
               <p>
                 Technology-route selection, process optimization, equipment
@@ -442,7 +442,7 @@ export default function Home() {
             </article>
 
             <article className="service-card">
-              <span>02</span>
+              <span></span>
               <h3>Supply Chain Integration</h3>
               <p>
                 Integration of equipment manufacturers, critical-component
@@ -452,7 +452,7 @@ export default function Home() {
             </article>
 
             <article className="service-card">
-              <span>03</span>
+              <span></span>
               <h3>Project Management &amp; Delivery</h3>
               <p>
                 Engineering, procurement, manufacturing, transportation, site
@@ -462,7 +462,7 @@ export default function Home() {
             </article>
 
             <article className="service-card">
-              <span>04</span>
+              <span></span>
               <h3>Digital Operations &amp; Maintenance</h3>
               <p>
                 Real-time monitoring, data analytics, performance
@@ -550,7 +550,7 @@ export default function Home() {
       <section className="section" id="projects">
         <div className="container">
           <div className="section-heading">
-            <span className="eyebrow">06 · PROJECTS</span>
+            <span className="eyebrow">PROJECTS</span>
             <h2>Global Project Development</h2>
             <p>
               Project opportunities and development activities across key
@@ -607,7 +607,7 @@ export default function Home() {
       <section className="section dark-section" id="business-models">
         <div className="container">
           <div className="section-heading">
-            <span className="eyebrow">07 · BUSINESS MODELS</span>
+            <span className="eyebrow">BUSINESS MODELS</span>
             <h2>Flexible Commercial Structures</h2>
             <p>
               Project structures can be designed according to asset ownership,
@@ -618,43 +618,43 @@ export default function Home() {
 
           <div className="model-grid">
             <div>
-              <span>01</span>
+              <span></span>
               <h3>Equipment Sale</h3>
               <p>Direct equipment sales.</p>
             </div>
 
             <div>
-              <span>02</span>
+              <span></span>
               <h3>EPC / Turnkey</h3>
               <p>Engineering, procurement, construction, and turnkey delivery.</p>
             </div>
 
             <div>
-              <span>03</span>
+              <span></span>
               <h3>Equipment Leasing</h3>
               <p>Equipment leasing and financing solutions.</p>
             </div>
 
             <div>
-              <span>04</span>
+              <span></span>
               <h3>BOO / BOT</h3>
               <p>Build-own-operate / build-operate-transfer structures.</p>
             </div>
 
             <div>
-              <span>05</span>
+              <span></span>
               <h3>Processing Fee</h3>
               <p>Fees based on throughput or production volume.</p>
             </div>
 
             <div>
-              <span>06</span>
+              <span></span>
               <h3>Revenue Sharing</h3>
               <p>Project revenue-sharing structures.</p>
             </div>
 
             <div>
-              <span>07</span>
+              <span></span>
               <h3>Digital O&amp;M Subscription</h3>
               <p>
                 Digital twin, remote O&amp;M, and continuous optimization

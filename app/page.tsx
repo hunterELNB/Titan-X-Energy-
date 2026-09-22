@@ -778,9 +778,9 @@ export default function Home() {
       <footer className="footer">
         <div className="container footer-inner">
           <div>
-            <div className="brand">
-              TITAN X <span>ENERGY</span>
-            </div>
+<div className="brand">
+  <img src="/logo.png" alt="Titan X Energy" className="brand-logo" />
+</div>
             <p>
               Modular Refining · Wellhead Gas Monetization · Distributed Power
               · Digital Energy

@@ -150,6 +150,7 @@ NAVIGATION
   display: block;
   width: 115px;
   height: auto;
+  background: transparent;
 }
 
 .brand span {

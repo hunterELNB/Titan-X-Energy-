@@ -603,67 +603,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* BUSINESS MODELS */}
-      <section className="section dark-section" id="business-models">
-        <div className="container">
-          <div className="section-heading">
-            <span className="eyebrow">BUSINESS MODELS</span>
-            <h2>Flexible Commercial Structures</h2>
-            <p>
-              Project structures can be designed according to asset ownership,
-              capital requirements, operating responsibilities, and project
-              economics.
-            </p>
-          </div>
-
-          <div className="model-grid">
-            <div>
-              <span></span>
-              <h3>Equipment Sale</h3>
-              <p>Direct equipment sales.</p>
-            </div>
-
-            <div>
-              <span></span>
-              <h3>EPC / Turnkey</h3>
-              <p>Engineering, procurement, construction, and turnkey delivery.</p>
-            </div>
-
-            <div>
-              <span></span>
-              <h3>Equipment Leasing</h3>
-              <p>Equipment leasing and financing solutions.</p>
-            </div>
-
-            <div>
-              <span></span>
-              <h3>BOO / BOT</h3>
-              <p>Build-own-operate / build-operate-transfer structures.</p>
-            </div>
-
-            <div>
-              <span></span>
-              <h3>Processing Fee</h3>
-              <p>Fees based on throughput or production volume.</p>
-            </div>
-
-            <div>
-              <span></span>
-              <h3>Revenue Sharing</h3>
-              <p>Project revenue-sharing structures.</p>
-            </div>
-
-            <div>
-              <span></span>
-              <h3>Digital O&amp;M Subscription</h3>
-              <p>
-                Digital twin, remote O&amp;M, and continuous optimization
-                services.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* BRAND MESSAGE */}
       <section className="brand-statement">

@@ -485,7 +485,7 @@ export default function Home() {
       <section className="section digital-section" id="digital-twin">
         <div className="container">
           <div className="section-heading centered">
-            <span className="eyebrow">05 · DIGITAL TWIN / AIoT</span>
+            <span className="eyebrow">DIGITAL TWIN / AIoT</span>
             <h2>One Digital Platform Across the Project Lifecycle</h2>
             <p>
               The digital platform connects equipment, projects, and remote

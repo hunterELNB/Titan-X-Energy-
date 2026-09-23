@@ -52,7 +52,7 @@ export async function POST(request: Request) {
         Authorization: `Bearer ${resendKey}`
       },
       body: JSON.stringify({
-        from: "Titan X Website <onboarding@resend.dev>",
+        from: "Titan X Website <contact@titan-x-energy.com>",
         to: [recipient],
         reply_to: email,
         subject: `Titan X Website Inquiry — ${inquiryType}`,

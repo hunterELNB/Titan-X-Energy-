@@ -69,7 +69,7 @@ export default function Home() {
             <a href="#services">SERVICES</a>
             <a href="#digital-twin">DIGITAL TWIN</a>
             <a href="#projects">PROJECTS</a>
-            <a href="#business-models">BUSINESS MODELS</a>
+           
             <a href="#contact">CONTACT</a>
           </nav>
         </div>

@@ -546,6 +546,7 @@ export default function Home() {
         </div>
       </section>
 
+     
       {/* PROJECTS */}
       <section className="section" id="projects">
         <div className="container">
@@ -579,8 +580,8 @@ export default function Home() {
 
             <article className="project-card">
               <span>INDONESIA</span>
-              <h3>Wellhead Oil</h3>
-              <p>Modular Refining Demonstration</p>
+              <h3>Crude Oil Processing &amp; Refining</h3>
+              <p>Crude Oil Processing / Modular Refining Demonstration</p>
               <small>PROJECT DEVELOPMENT</small>
             </article>
 
@@ -599,10 +600,20 @@ export default function Home() {
               </p>
               <small>PROJECT DEVELOPMENT</small>
             </article>
+
+            <article className="project-card">
+              <span>GLOBAL</span>
+              <h3>Distributed Modular Refining</h3>
+              <p>
+                Modular Refining Systems / Decentralized Refining /
+                Distributed Fuel Production
+              </p>
+              <small>PROJECT DEVELOPMENT</small>
+            </article>
           </div>
         </div>
       </section>
-
+ 
 
       {/* BRAND MESSAGE */}
       <section className="brand-statement">

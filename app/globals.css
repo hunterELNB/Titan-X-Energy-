@@ -1132,3 +1132,18 @@ RESPONSIVE
   }
 }
 
+
+/* Fix text contrast in the Wellhead Gas dark section */
+#wellhead-gas .two-column h3,
+#wellhead-gas .two-column p,
+#wellhead-gas .feature-list,
+#wellhead-gas .feature-list li,
+#wellhead-gas .feature-list strong {
+  color: #ffffff;
+}
+
+#wellhead-gas .process-box > span,
+#wellhead-gas .process-box > p,
+#wellhead-gas .process-box > strong {
+  color: #ffffff;
+}

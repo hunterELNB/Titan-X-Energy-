@@ -1,3 +1,4 @@
+
 "use client";
 
 import { FormEvent, useState } from "react";
@@ -22,16 +23,16 @@ export default function Home() {
       phone: data.get("phone"),
       region: data.get("region"),
       inquiryType: data.get("inquiryType"),
-      message: data.get("message")
+      message: data.get("message"),
     };
 
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(payload)
+        body: JSON.stringify(payload),
       });
 
       const result = await response.json();
@@ -58,24 +59,28 @@ export default function Home() {
       {/* NAVIGATION */}
       <header className="nav">
         <div className="container nav-inner">
-<a href="#home" className="brand">
-  <img src="/logo.png" alt="Titan X Energy" className="brand-logo" />
-</a>
+          <a href="#home" className="brand">
+            <img
+              src="/logo.png"
+              alt="Titan X Energy"
+              className="brand-logo"
+            />
+          </a>
 
           <nav className="nav-links">
-            <a href="#refining">REFINING</a>
+            <a href="#home">HOME</a>
+            <a href="#refining">MODULAR REFINERIES</a>
             <a href="#wellhead-gas">WELLHEAD GAS</a>
-            <a href="#solutions">SOLUTIONS</a>
+            <a href="#solutions">INTEGRATED SOLUTIONS</a>
             <a href="#services">SERVICES</a>
             <a href="#digital-twin">DIGITAL TWIN</a>
             <a href="#projects">PROJECTS</a>
-           
             <a href="#contact">CONTACT</a>
           </nav>
         </div>
       </header>
 
-      {/* HERO */}
+      {/* HOME */}
       <section className="hero" id="home">
         <div
           className="hero-image"
@@ -85,157 +90,254 @@ export default function Home() {
         <div className="container hero-content">
           <div className="kicker">TITAN X ENERGY</div>
 
-          <h1>TURN STRANDED ENERGY INTO VALUE</h1>
+          <h1>Customized Modular Oil and Gas Processing Facilities</h1>
 
           <p className="hero-subtitle">
-            Modular Refining · Wellhead Gas Monetization · Digital Energy
+            Modular Refineries · Wellhead Gas Processing · Integrated Project
+            Services
           </p>
 
           <p className="hero-description">
-            From wellhead to market, modular, mobile, and digitally enabled
-            energy systems convert crude oil and natural gas at or near the
-            source into diesel, CNG, LPG/NGL, and electricity.
+            Titan X Energy focuses on providing customers with customized,
+            modular crude oil refining and wellhead gas processing facilities,
+            together with related services, at oil and gas fields or other
+            locations with convenient logistics access.
+          </p>
+
+          <p className="hero-description">
+            Each solution is developed around the customer&apos;s feedstock,
+            production capacity, product specifications, site conditions, and
+            commercial objectives. We integrate technical proposal development,
+            supply chain management, project management, and digital twin based
+            operating services across the project lifecycle.
           </p>
 
           <div className="hero-actions">
             <a href="#solutions" className="button button-primary">
-              Explore Solutions
+              Explore Our Solutions
             </a>
             <a href="#contact" className="button button-secondary">
-              Contact Us
+              Discuss Your Project
             </a>
           </div>
         </div>
       </section>
 
-      {/* BUSINESS ENTRANCES */}
+      {/* OUR CORE OFFERINGS */}
       <section className="section business-entrances">
         <div className="container">
           <div className="section-heading">
-            <span className="eyebrow">OUR CORE PATHWAYS</span>
-            <h2>From Resource to Marketable Energy</h2>
+            <span className="eyebrow">OUR CORE OFFERINGS</span>
+            <h2>Customized Facilities. Integrated Services.</h2>
             <p>
-              Titan X Energy connects upstream resources with downstream
-              markets through modular processing, monetization, and digital
-              operations.
+              Titan X Energy connects customized processing facilities with
+              coordinated technical, supply chain, project delivery, and
+              digital operating services.
             </p>
           </div>
 
           <div className="business-grid">
             <a href="#refining" className="business-card">
               <span className="card-number"></span>
-              <h3>MODULAR REFINING</h3>
-              <strong>Heavy Oil → Marketable Fuels</strong>
+              <h3>MODULAR REFINERIES</h3>
+              <strong>Customized Refining Configurations</strong>
               <p>
-                Modular refining systems designed to process challenging and
-                remote crude resources at or near the source.
+                Refinery configurations developed around crude characteristics,
+                capacity requirements, target products, and local operating
+                conditions.
               </p>
-              <span className="card-link">EXPLORE REFINING →</span>
+              <span className="card-link">
+                EXPLORE MODULAR REFINERIES →
+              </span>
             </a>
 
             <a href="#wellhead-gas" className="business-card">
               <span className="card-number"></span>
-              <h3>WELLHEAD GAS</h3>
-              <strong>Natural Gas → CNG · LPG/NGL · Power</strong>
+              <h3>WELLHEAD GAS PROCESSING</h3>
+              <strong>Gas Treatment and Processing</strong>
               <p>
-                Multiple monetization pathways for natural gas without
-                economic pipeline access.
+                Modular treatment and processing configurations aligned with
+                gas composition, site conditions, and the intended downstream
+                application.
               </p>
-              <span className="card-link">EXPLORE WELLHEAD GAS →</span>
+              <span className="card-link">
+                EXPLORE WELLHEAD GAS →
+              </span>
             </a>
+          </div>
+
+          <div className="three-card-grid">
+            <article className="solution-card">
+              <span className="card-number"></span>
+              <h3>INTEGRATED PROJECT SERVICES</h3>
+              <h4>From Technical Proposal to Delivery</h4>
+              <p>
+                Technical proposals, optimized supply chains, coordinated
+                project delivery, and digital operating support across the
+                project lifecycle.
+              </p>
+            </article>
+
+            <article className="solution-card">
+              <span className="card-number"></span>
+              <h3>CUSTOMIZED CONFIGURATION</h3>
+              <h4>Designed Around Project Requirements</h4>
+              <p>
+                Process selection and equipment configuration based on
+                feedstock, capacity, product specifications, location, and
+                commercial objectives.
+              </p>
+            </article>
+
+            <article className="solution-card">
+              <span className="card-number"></span>
+              <h3>DIGITAL OPERATIONS</h3>
+              <h4>Connected Facility Lifecycle</h4>
+              <p>
+                Digital architecture and operating information designed to
+                support monitoring, maintenance planning, performance analysis,
+                and technical assistance.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
-      {/* CORE LOGIC */}
+      {/* OUR PROJECT APPROACH */}
       <section className="section dark-section">
         <div className="container">
           <div className="section-heading centered">
-            <span className="eyebrow">CORE BUSINESS LOGIC</span>
-            <h2>Oil & Gas Resource → Processing → Monetization</h2>
+            <span className="eyebrow">OUR PROJECT APPROACH</span>
+            <h2>From Customer Requirements to Operations</h2>
+            <p>
+              Each project follows a coordinated development process, with
+              technical configuration and delivery scope defined around the
+              customer&apos;s requirements.
+            </p>
           </div>
 
-          <div className="flow-grid">
-            <div className="flow-item">
-              <span></span>
-              <h3>CRUDE OIL</h3>
-              <p>Modular Refining</p>
-              <strong>Diesel / Naphtha / Fuels</strong>
-            </div>
+          <div className="digital-flow">
+            <div>CUSTOMER REQUIREMENTS</div>
+            <span>→</span>
+            <div>TECHNICAL PROPOSAL</div>
+            <span>→</span>
+            <div>MODULAR CONFIGURATION</div>
+            <span>→</span>
+            <div>SUPPLY CHAIN &amp; PROJECT MANAGEMENT</div>
+            <span>→</span>
+            <div>DIGITAL OPERATIONS</div>
+          </div>
 
-            <div className="flow-arrow">→</div>
-
-            <div className="flow-item">
-              <span></span>
-              <h3>NATURAL GAS</h3>
-              <p>Gas Processing</p>
-              <strong>CNG / LPG-NGL / Distributed Power</strong>
-            </div>
-
-            <div className="flow-arrow">→</div>
-
-            <div className="flow-item">
-              <span></span>
-              <h3>DIGITAL ENERGY</h3>
-              <p>Digital Twin + AIoT</p>
-              <strong>Monitoring / Control / Optimization / O&M</strong>
-            </div>
+          <div className="highlight-strip">
+            <strong>FACILITY LOCATION &amp; PROJECT DESIGN</strong>
+            <span>
+              Feedstock Availability · Utilities · Product Markets · Transport
+              Access · Customer Requirements
+            </span>
           </div>
         </div>
       </section>
 
-      {/* MODULAR REFINING */}
+      {/* MODULAR REFINERIES */}
       <section className="section" id="refining">
         <div className="container">
           <div className="section-heading">
-            <span className="eyebrow">MODULAR REFINING</span>
-            <h2>Refinery Economics at the Source</h2>
+            <span className="eyebrow">MODULAR REFINERIES</span>
+            <h2>Modular Refining Designed Around Your Requirements</h2>
             <p>
-              Titan X Energy focuses on the modularization, standardization,
-              and factory prefabrication of key refining processes, enabling
-              refining capacity to be deployed at or near oilfields and
-              resource locations.
+              Titan X Energy develops customized modular refinery solutions
+              for deployment at oilfields or other suitable locations with
+              efficient logistics access. The process configuration is selected
+              to match the crude oil characteristics, required throughput,
+              target product slate, and local operating conditions.
             </p>
           </div>
 
           <div className="two-column">
             <div>
-              <h3>Feedstock Adaptability</h3>
-              <ul className="feature-list">
-                <li>Heavy crude oil</li>
-                <li>High-ash crude oil</li>
-                <li>High-metal-content crude oil</li>
-                <li>Crude oil from remote oilfields</li>
-                <li>
-                  Crude oil that may be uneconomic for conventional
-                  large-scale refineries
-                </li>
-              </ul>
+              <h3>A Customized Process Configuration</h3>
+              <p>
+                A modular refinery combines selected processing units into an
+                integrated facility. Depending on the feedstock and product
+                requirements, the configuration may include crude pretreatment,
+                atmospheric and vacuum distillation, upgrading or conversion,
+                desulfurization, and product blending.
+              </p>
+              <p>
+                The technical proposal defines which units are required and
+                how they work together. Equipment selection, operating
+                conditions, utilities, and product quality requirements are
+                evaluated as part of the project design.
+              </p>
             </div>
 
             <div>
-              <h3>Flexible Product Slate</h3>
-              <p>
-                The modular refining system can adjust the product slate
-                through process configuration, operating conditions, and
-                catalyst systems according to local market demand.
-              </p>
-              <p>
-                Where diesel demand and pricing are more attractive, the system
-                can be configured to emphasize higher diesel fractions and
-                final diesel yield.
-              </p>
+              <h3>Key Design Inputs</h3>
+              <ul className="feature-list">
+                <li>
+                  <strong>Feedstock —</strong> Crude assay, viscosity, sulfur,
+                  metals, solids, and other relevant properties.
+                </li>
+                <li>
+                  <strong>Capacity —</strong> Available feedstock volume,
+                  operating schedule, and future expansion requirements.
+                </li>
+                <li>
+                  <strong>Products —</strong> Target fuels or intermediate
+                  products and applicable specifications.
+                </li>
+                <li>
+                  <strong>Location —</strong> Land, utilities, transport routes,
+                  storage, and access to product markets.
+                </li>
+                <li>
+                  <strong>Project Objectives —</strong> Investment parameters,
+                  delivery requirements, and operating model.
+                </li>
+              </ul>
             </div>
           </div>
 
           <div className="process-box">
-            <span>PROCESS ROUTE</span>
+            <span>MODULAR DESIGN &amp; FACTORY PREFABRICATION</span>
             <p>
-              CRUDE OIL → DE-ASHING / DEMETALLIZATION → CRUDE UPGRADING →
-              ATMOSPHERIC &amp; VACUUM DISTILLATION → THERMAL CRACKING /
-              RESIDUE UPGRADING → DESULFURIZATION → PRODUCT BLENDING
+              PROCESS SELECTION → UNIT CONFIGURATION → FACTORY FABRICATION →
+              TRANSPORTATION → SITE INTEGRATION
             </p>
-            <strong>Diesel · Naphtha · Fuel Products</strong>
+            <strong>
+              Transport Restrictions · Site Access · Installation ·
+              Maintainability
+            </strong>
+          </div>
+
+          <div className="two-column">
+            <div>
+              <h3>Modular Design and Factory Prefabrication</h3>
+              <p>
+                Modular design supports factory fabrication of selected
+                equipment assemblies, coordinated shipment, and planned site
+                integration. Module dimensions and interfaces are developed
+                around transport restrictions, site access, installation
+                requirements, and maintainability.
+              </p>
+            </div>
+
+            <div>
+              <h3>From Proposal to Operations</h3>
+              <p>
+                Our services connect process selection and equipment
+                configuration with procurement coordination, project delivery,
+                commissioning support, and digital operations. The scope is
+                defined for each project and aligned with the customer&apos;s
+                team and delivery partners.
+              </p>
+            </div>
+          </div>
+
+          <div className="hero-actions">
+            <a href="#contact" className="button button-primary">
+              Discuss Your Refinery Requirements
+            </a>
           </div>
         </div>
       </section>
@@ -245,238 +347,256 @@ export default function Home() {
         <div className="container">
           <div className="section-heading">
             <span className="eyebrow">WELLHEAD GAS</span>
-            <h2>Wellhead Gas Monetization</h2>
+            <h2>Customized Modular Wellhead Gas Processing</h2>
             <p>
-              From wellhead gas to revenue. Titan X Energy develops modular
-              processing and downstream pathways for remote, dispersed, or
-              infrastructure-constrained natural gas resources.
+              Titan X Energy develops modular wellhead gas treatment and
+              processing configurations based on gas composition, pressure,
+              flow rate, site conditions, and the intended downstream
+              application.
+            </p>
+            <p>
+              The technical proposal defines the required treatment,
+              separation, and pressure management stages, together with
+              equipment and utility interfaces. Downstream options are
+              evaluated against product requirements, logistics, and project
+              economics.
             </p>
           </div>
 
-          <div className="gas-flow">
-            <div>WELLHEAD GAS</div>
-            <span>→</span>
-            <div>PRETREATMENT</div>
-            <span>→</span>
-            <div>GAS PROCESSING</div>
-            <span>→</span>
-            <div>MONETIZATION</div>
+          <div className="two-column">
+            <div>
+              <h3>Project-Specific Gas Processing</h3>
+              <p>
+                Gas composition, operating pressure, flow rate, and feed
+                variability are evaluated to establish the project design
+                basis. Treatment and processing requirements are selected
+                according to the intended application and applicable product
+                specifications.
+              </p>
+            </div>
+
+            <div>
+              <h3>Technical Configuration</h3>
+              <ul className="feature-list">
+                <li>Gas composition and feed conditions</li>
+                <li>Required treatment and separation</li>
+                <li>Pressure management and utility requirements</li>
+                <li>Equipment interfaces and site conditions</li>
+                <li>Downstream application and project economics</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="process-box">
+            <span>PROJECT DEVELOPMENT APPROACH</span>
+            <p>
+              GAS CHARACTERIZATION → TECHNICAL PROPOSAL → PROCESS
+              CONFIGURATION → EQUIPMENT INTEGRATION → PROJECT DELIVERY
+            </p>
+            <strong>
+              Each processing route is defined by the project requirements.
+            </strong>
+          </div>
+
+          <div className="hero-actions">
+            <a href="#contact" className="button button-primary">
+              Discuss Your Gas Processing Requirements
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* INTEGRATED SOLUTIONS */}
+      <section className="section" id="solutions">
+        <div className="container">
+          <div className="section-heading">
+            <span className="eyebrow">INTEGRATED SOLUTIONS</span>
+            <h2>Vertically Integrated Solutions</h2>
+            <p>
+              Titan X Energy coordinates the engineering, equipment supply,
+              project delivery, and operating support required to develop
+              customized modular oil and gas processing facilities. This
+              vertically integrated service approach connects decisions across
+              the project lifecycle.
+            </p>
+          </div>
+
+          <div className="two-column">
+            <div>
+              <h3>Start with the Customer&apos;s Requirements</h3>
+              <p>
+                We assess feedstock data, product requirements, site
+                conditions, logistics, and investment objectives to define the
+                project basis. The resulting technical proposal establishes the
+                process configuration, key equipment, utilities, interfaces,
+                and delivery scope.
+              </p>
+            </div>
+
+            <div>
+              <h3>Connect Design with Supply and Delivery</h3>
+              <p>
+                Equipment and supplier selection are coordinated with the
+                technical design and project schedule. Procurement, fabrication,
+                inspection, transportation, installation, and commissioning
+                interfaces are managed within an integrated delivery plan.
+              </p>
+            </div>
+
+            <div>
+              <h3>Build Operations into the Project</h3>
+              <p>
+                Monitoring requirements, operating data, maintenance access,
+                and digital interfaces are considered during design. This helps
+                connect the delivered facility with the operating support
+                needed throughout its service life.
+              </p>
+            </div>
+
+            <div>
+              <h3>A Defined Scope for Each Project</h3>
+              <p>
+                The service scope can cover technical studies, equipment
+                supply coordination, project management, digital operating
+                support, or a coordinated package. Responsibilities and
+                interfaces are established with the customer and project
+                partners.
+              </p>
+            </div>
           </div>
 
           <div className="three-card-grid">
             <article className="solution-card">
               <span className="card-number"></span>
-              <h3>CNG</h3>
-              <h4>Compressed Natural Gas</h4>
+              <h3>OILFIELD REFINING</h3>
+              <h4>Processing Close to Feedstock</h4>
               <p>
-                Gas is purified and compressed into a transportable commodity
-                for nearby industrial customers, vehicle fuel, and
-                short-to-medium-distance transportation.
+                Modular crude processing facilities located close to feedstock
+                production where site conditions and project economics support
+                deployment.
               </p>
             </article>
 
             <article className="solution-card">
               <span className="card-number"></span>
-              <h3>LPG / NGL</h3>
-              <h4>Natural Gas Liquids Recovery</h4>
+              <h3>LOGISTICS-ACCESSIBLE LOCATIONS</h3>
+              <h4>Designed Around Market Access</h4>
               <p>
-                Separation and NGL recovery can produce LPG, condensate, and
-                other NGL products, creating multiple potential revenue
-                streams.
+                Facilities positioned to balance crude supply, transport
+                access, utilities, storage, and downstream markets.
               </p>
             </article>
 
             <article className="solution-card">
               <span className="card-number"></span>
-              <h3>DISTRIBUTED POWER</h3>
-              <h4>Power at the Source</h4>
+              <h3>INTEGRATED OIL &amp; GAS FACILITIES</h3>
+              <h4>Coordinated Project Systems</h4>
               <p>
-                Condition wellhead gas and convert the resource directly into
-                electricity for oilfields, microgrids, grid-connected
-                generation, or distributed computing.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      {/* DISTRIBUTED POWER */}
-      <section className="section" id="distributed-power">
-        <div className="container">
-          <div className="section-heading">
-            <span className="eyebrow">WELLHEAD GAS · POWER</span>
-            <h2>Gas at the Wellhead. Power at the Source.</h2>
-            <p>
-              Localized power generation converts wellhead gas into
-              distributed electricity, reducing dependence on diesel
-              generation or purchased grid power where project conditions
-              support the model.
-            </p>
-          </div>
-
-          <div className="application-grid">
-            <article>
-              <h3>Oilfield Power</h3>
-              <p>
-                Electricity for pumpjacks, compressors, water pumps, processing
-                equipment, and other oilfield facilities.
-              </p>
-            </article>
-
-            <article>
-              <h3>Local Microgrid</h3>
-              <p>
-                One wellsite or multiple nearby wellsites can serve as energy
-                nodes within a modular distributed-energy system.
-              </p>
-            </article>
-
-            <article>
-              <h3>Grid Connection</h3>
-              <p>
-                Where regulations, grid conditions, and project economics
-                permit, generation can be connected to the regional grid.
-              </p>
-            </article>
-
-            <article>
-              <h3>Distributed Computing</h3>
-              <p>
-                Wellhead gas, distributed generation, and modular data centers
-                can provide on-site energy for AI computing and other
-                high-load facilities.
+                Refining, gas processing, utilities, and digital operations
+                coordinated where the project requires an integrated approach.
               </p>
             </article>
           </div>
 
           <div className="highlight-strip">
-            <strong>THREE PRINCIPAL MONETIZATION PATHWAYS</strong>
+            <strong>INTEGRATED PROJECT DELIVERY</strong>
             <span>
-              Wellhead Gas → CNG&nbsp;&nbsp; | &nbsp;&nbsp;Wellhead Gas → LPG /
-              NGL&nbsp;&nbsp; | &nbsp;&nbsp;Wellhead Gas → Distributed Power
+              Technical Studies · Equipment Coordination · Project Management ·
+              Digital Operating Support
             </span>
           </div>
-        </div>
-      </section>
 
-      {/* SOLUTIONS */}
-      <section className="section dark-section" id="solutions">
-        <div className="container">
-          <div className="section-heading">
-            <span className="eyebrow">SOLUTIONS</span>
-            <h2>Solutions Built Around Customer Scenarios</h2>
-            <p>
-              Customers provide the resource conditions, logistics
-              constraints, and end-market requirements. Titan X Energy
-              develops the appropriate resource-monetization pathway.
-            </p>
-          </div>
-
-          <div className="scenario-table">
-            <div className="table-head">
-              <span>Customer Scenario</span>
-              <span>Typical Challenge</span>
-              <span>Recommended Solution</span>
-            </div>
-
-            <div className="table-row">
-              <strong>Stranded Oil</strong>
-              <p>
-                Crude production exists, but refineries are distant and
-                transportation costs are high.
-              </p>
-              <b>Modular Refinery</b>
-            </div>
-
-            <div className="table-row">
-              <strong>Stranded Gas</strong>
-              <p>
-                Natural gas lacks pipeline access or is being vented or
-                flared.
-              </p>
-              <b>CNG / LPG-NGL / Distributed Power</b>
-            </div>
-
-            <div className="table-row">
-              <strong>Remote Oilfield</strong>
-              <p>
-                Infrastructure is limited and energy supply is dispersed.
-              </p>
-              <b>
-                Modular Refining + Gas Processing + Distributed Power
-              </b>
-            </div>
-
-            <div className="table-row">
-              <strong>Digital Energy</strong>
-              <p>Sites are dispersed and O&amp;M costs are high.</p>
-              <b>Digital Twin + Remote Operation + AI Optimization</b>
-            </div>
+          <div className="hero-actions">
+            <a href="#contact" className="button button-primary">
+              Explore an Integrated Solution
+            </a>
           </div>
         </div>
       </section>
 
       {/* SERVICES */}
-      <section className="section" id="services">
+      <section className="section dark-section" id="services">
         <div className="container">
           <div className="section-heading">
             <span className="eyebrow">SERVICES</span>
-            <h2>Core Capabilities &amp; Services</h2>
+            <h2>Integrated Services Across the Project Lifecycle</h2>
             <p>
-              Titan X Energy is positioned as a technology-integration and
-              full-lifecycle service platform for modular refining, wellhead
-              gas processing and utilization, and distributed-energy projects.
+              Titan X Energy provides customized technical proposals,
+              optimized supply chain management, project management, and
+              digital twin based operating services for modular refining and
+              wellhead gas processing projects.
             </p>
           </div>
 
           <div className="service-grid">
             <article className="service-card">
               <span></span>
-              <h3>Engineering &amp; Technical Consulting</h3>
+              <h3>Customized Technical Proposals</h3>
               <p>
-                Technology-route selection, process optimization, equipment
-                configuration, and system integration based on feedstock,
-                site conditions, product requirements, and investment
-                objectives.
+                We translate customer requirements into a technical proposal
+                covering feedstock assessment, process route selection,
+                capacity, product targets, equipment configuration, utilities,
+                and site interfaces. Options are evaluated against the
+                project&apos;s technical and commercial requirements.
               </p>
             </article>
 
             <article className="service-card">
               <span></span>
-              <h3>Supply Chain Integration</h3>
+              <h3>Optimized Supply Chain Management</h3>
               <p>
-                Integration of equipment manufacturers, critical-component
-                suppliers, and specialized engineering resources through
-                modularization, standardization, and prefabrication.
+                We coordinate equipment manufacturers, component suppliers,
+                and specialist engineering resources around the agreed project
+                specification. Supply planning considers equipment
+                compatibility, supplier capability, quality requirements, lead
+                times, transportation, and lifecycle support.
               </p>
             </article>
 
             <article className="service-card">
               <span></span>
-              <h3>Project Management &amp; Delivery</h3>
+              <h3>Project Management</h3>
               <p>
-                Engineering, procurement, manufacturing, transportation, site
-                installation, system integration, commissioning, and
-                start-up.
+                We coordinate the agreed project scope from design and
+                procurement through fabrication, transportation, installation,
+                and commissioning. Project controls address schedule, cost,
+                quality, technical interfaces, and delivery risks, with defined
+                responsibilities across the customer, suppliers, and site
+                teams.
               </p>
             </article>
 
             <article className="service-card">
               <span></span>
-              <h3>Digital Operations &amp; Maintenance</h3>
+              <h3>Digital Twin Based Operating Services</h3>
               <p>
-                Real-time monitoring, data analytics, performance
-                optimization, fault warning, and remote technical support
-                through the digital-twin platform.
+                We support facility monitoring, operating analysis,
+                maintenance planning, and technical assistance through a
+                project-specific digital architecture. Digital models and
+                operating data can help identify performance deviations and
+                support better operating decisions.
               </p>
             </article>
           </div>
 
           <div className="core-value">
-            <span>CORE VALUE</span>
+            <span>FLEXIBLE ENGAGEMENT</span>
             <strong>
-              ENGINEERING → SUPPLY CHAIN → PROJECT DELIVERY → DIGITAL O&amp;M
+              TECHNICAL PROPOSALS → SUPPLY CHAIN → PROJECT MANAGEMENT →
+              DIGITAL OPERATING SUPPORT
             </strong>
+            <p>
+              Customers can engage Titan X Energy for an individual service or
+              an integrated project package. Scope, deliverables,
+              responsibilities, and service arrangements are defined for each
+              engagement.
+            </p>
+          </div>
+
+          <div className="hero-actions">
+            <a href="#contact" className="button button-primary">
+              Discuss Your Service Requirements
+            </a>
           </div>
         </div>
       </section>
@@ -485,144 +605,188 @@ export default function Home() {
       <section className="section digital-section" id="digital-twin">
         <div className="container">
           <div className="section-heading centered">
-            <span className="eyebrow">DIGITAL TWIN / AIoT</span>
-            <h2>One Digital Platform Across the Project Lifecycle</h2>
+            <span className="eyebrow">DIGITAL TWIN</span>
+            <h2>
+              Digital Tools for Proposals, Project Management and Operations
+            </h2>
             <p>
-              The digital platform connects equipment, projects, and remote
-              operations through a unified operating architecture.
+              Titan X Energy&apos;s digital twin approach supports three
+              connected activities: developing customized technical proposals,
+              managing project information and delivery, and establishing the
+              facility&apos;s operating architecture.
             </p>
           </div>
 
           <div className="digital-flow">
-            <div>FIELD EQUIPMENT</div>
+            <div>CUSTOMER &amp; FEEDSTOCK DATA</div>
             <span>→</span>
-            <div>SENSORS / PLC / SCADA</div>
+            <div>TECHNICAL CONFIGURATION</div>
             <span>→</span>
-            <div>CLOUD / EDGE</div>
+            <div>PROJECT &amp; EQUIPMENT RECORDS</div>
             <span>→</span>
-            <div>DIGITAL TWIN</div>
+            <div>OPERATING DATA</div>
             <span>→</span>
-            <div>AI OPTIMIZATION</div>
-            <span>→</span>
-            <div>REMOTE CONTROL CENTER</div>
+            <div>ANALYSIS &amp; OPERATING SUPPORT</div>
           </div>
 
           <div className="digital-features">
             <article>
-              <h3>Real-Time Monitoring</h3>
+              <h3>Customized Technical Proposal Development</h3>
               <p>
-                Real-time operating data and equipment-condition monitoring.
+                Structured feedstock data, customer requirements, process
+                models, and equipment information support the efficient
+                development and comparison of technical configurations.
+                Engineering review remains central to confirming the selected
+                design and its project-specific requirements.
               </p>
             </article>
 
             <article>
-              <h3>Remote Operation</h3>
+              <h3>Project Management and Delivery Coordination</h3>
               <p>
-                Remote control and centralized management of multiple projects.
+                The digital architecture can link equipment information,
+                engineering documents, procurement status, fabrication
+                milestones, and commissioning records. A coordinated
+                information structure helps project teams manage interfaces
+                and track delivery against the agreed scope.
               </p>
             </article>
 
             <article>
-              <h3>Predictive Maintenance</h3>
+              <h3>Operating Architecture</h3>
               <p>
-                Predictive maintenance and early fault warning based on
-                operating data.
+                The operating platform is configured around the facility&apos;s
+                equipment, instrumentation, control systems, connectivity, and
+                reporting requirements. It connects available operating data
+                with digital models and analytical tools to support monitoring
+                and technical decisions.
               </p>
             </article>
 
             <article>
-              <h3>Performance Optimization</h3>
+              <h3>Monitoring</h3>
               <p>
-                Optimization of production, energy consumption, product slate,
-                and equipment performance.
+                Display operating conditions, equipment status, and relevant
+                production indicators according to the facility&apos;s
+                instrumentation and available data.
+              </p>
+            </article>
+
+            <article>
+              <h3>Performance Analysis</h3>
+              <p>
+                Compare operating data with design targets and expected
+                behavior to support operating assessments and technical
+                decisions.
+              </p>
+            </article>
+
+            <article>
+              <h3>Maintenance Support</h3>
+              <p>
+                Identify equipment-condition trends and support maintenance
+                planning, fault investigation, and technical coordination.
+              </p>
+            </article>
+
+            <article>
+              <h3>Technical Support</h3>
+              <p>
+                Provide a shared information base for site teams and remote
+                specialists to support troubleshooting and operating
+                decisions.
               </p>
             </article>
           </div>
 
           <div className="digital-note">
-            Modular refining · CNG · LPG/NGL · Wellhead-gas distributed power
-            → One Digital Operating Platform
+            Digital functions are selected for each facility according to
+            available data, system interfaces, and customer requirements.
+          </div>
+
+          <div className="hero-actions">
+            <a href="#contact" className="button button-primary">
+              Discuss Digital Integration
+            </a>
           </div>
         </div>
       </section>
 
-     
       {/* PROJECTS */}
       <section className="section" id="projects">
         <div className="container">
           <div className="section-heading">
             <span className="eyebrow">PROJECTS</span>
-            <h2>Global Project Development</h2>
+            <h2>Project Development and Collaboration</h2>
             <p>
-              Project opportunities and development activities across key
-              energy markets. Project stage and client disclosure will vary
-              according to commercial status and confidentiality.
+              Titan X Energy works with customers and project partners to
+              evaluate opportunities for customized modular refining and
+              wellhead gas processing facilities.
+            </p>
+            <p>
+              Project discussions begin with feedstock availability, site and
+              logistics conditions, product demand, and the required service
+              scope. We use these inputs to develop the technical configuration
+              and delivery approach.
             </p>
           </div>
 
-          <div className="project-grid">
-            <article className="project-card">
-              <span>NORTH AMERICA</span>
-              <h3>Wellhead Gas &amp; Distributed Energy</h3>
+          <div className="two-column">
+            <div>
+              <h3>Project Evaluation</h3>
+              <ul className="feature-list">
+                <li>Feedstock availability and characteristics</li>
+                <li>Proposed location and site conditions</li>
+                <li>Utilities, logistics, and transport access</li>
+                <li>Target products and market requirements</li>
+                <li>Required technical and delivery scope</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Technical Configuration and Delivery</h3>
               <p>
-                Wellhead Gas / CNG / LPG / Distributed Power / Distributed
-                Computing
+                Each opportunity is evaluated on its own requirements. The
+                technical proposal establishes the appropriate process
+                configuration, key equipment, project interfaces, and
+                potential delivery arrangements.
               </p>
-              <small>PROJECT DEVELOPMENT</small>
-            </article>
-
-            <article className="project-card">
-              <span>LATIN AMERICA</span>
-              <h3>Heavy Oil &amp; Modular Refining</h3>
-              <p>Heavy Oil / Modular Refining</p>
-              <small>PROJECT DEVELOPMENT</small>
-            </article>
-
-            <article className="project-card">
-              <span>INDONESIA</span>
-              <h3>Crude Oil Processing &amp; Refining</h3>
-              <p>Crude Oil Processing / Modular Refining Demonstration</p>
-              <small>PROJECT DEVELOPMENT</small>
-            </article>
-
-            <article className="project-card">
-              <span>AUSTRALIA</span>
-              <h3>Modular Energy</h3>
-              <p>Modular Energy / Gas-to-Power</p>
-              <small>PROJECT DEVELOPMENT</small>
-            </article>
-
-            <article className="project-card">
-              <span>CANADA</span>
-              <h3>Upstream Oil &amp; Gas</h3>
               <p>
-                Wellhead Gas Monetization / Modular Refining
+                Responsibilities, project stages, and disclosure of project
+                details are confirmed with the relevant customers and project
+                partners.
               </p>
-              <small>PROJECT DEVELOPMENT</small>
-            </article>
+            </div>
+          </div>
 
-            <article className="project-card">
-              <span>GLOBAL</span>
-              <h3>Distributed Modular Refining</h3>
-              <p>
-                Modular Refining Systems / Decentralized Refining /
-                Distributed Fuel Production
-              </p>
-              <small>PROJECT DEVELOPMENT</small>
-            </article>
+          <div className="process-box">
+            <span>PROJECT DEVELOPMENT</span>
+            <p>
+              OPPORTUNITY ASSESSMENT → TECHNICAL PROPOSAL → PROJECT SCOPE →
+              DELIVERY PLANNING → OPERATING SUPPORT
+            </p>
+            <strong>
+              Customized Modular Refining · Wellhead Gas Processing ·
+              Integrated Project Services
+            </strong>
+          </div>
+
+          <div className="hero-actions">
+            <a href="#contact" className="button button-primary">
+              Discuss a Project Opportunity
+            </a>
           </div>
         </div>
       </section>
- 
 
       {/* BRAND MESSAGE */}
       <section className="brand-statement">
         <div className="container">
           <span className="eyebrow">TITAN X ENERGY</span>
-          <h2>FROM WELLHEAD TO MARKET</h2>
+          <h2>FROM REQUIREMENTS TO OPERATIONS</h2>
           <p>
-            Turning oil and gas resources into value—from the wellhead to the
-            market.
+            Customized modular refining and wellhead gas processing facilities,
+            supported by integrated project services and digital operations.
           </p>
         </div>
       </section>
@@ -632,26 +796,29 @@ export default function Home() {
         <div className="container contact-grid">
           <div className="contact-copy">
             <span className="eyebrow">CONTACT TITAN X ENERGY</span>
-            <h2>Let&apos;s Build the Next Generation of Energy Infrastructure.</h2>
+            <h2>Tell Us About Your Project</h2>
             <p>
-              Tell us about your resource, location, infrastructure
-              constraints, product requirements, or project objectives.
+              Share your feedstock information, proposed location, required
+              capacity, target products, and project objectives. We will discuss
+              the appropriate technical approach and service scope with you.
             </p>
 
             <div className="contact-points">
               <div>
-                <strong>RESOURCE</strong>
-                <span>Crude Oil · Natural Gas · Wellhead Resources</span>
+                <strong>FACILITIES</strong>
+                <span>Modular Refineries · Wellhead Gas Processing</span>
               </div>
 
               <div>
-                <strong>PROJECT</strong>
-                <span>Development · Investment · Strategic Partnership</span>
+                <strong>PROJECT SERVICES</strong>
+                <span>
+                  Technical Proposals · Supply Chain · Project Management
+                </span>
               </div>
 
               <div>
-                <strong>SOLUTIONS</strong>
-                <span>Refining · Gas · Power · Digital Energy</span>
+                <strong>DIGITAL</strong>
+                <span>Digital Twin · Operating Support · Technical Integration</span>
               </div>
             </div>
           </div>
@@ -683,7 +850,7 @@ export default function Home() {
 
             <div className="form-row">
               <label>
-                Country / Region
+                Country or Region
                 <input name="region" />
               </label>
 
@@ -693,14 +860,20 @@ export default function Home() {
                   <option value="" disabled>
                     Select an inquiry type
                   </option>
-                  <option value="Business Inquiry">
-                    Business Inquiry
+                  <option value="Modular Refinery">
+                    Modular Refinery
                   </option>
-                  <option value="Technology Partnership">
-                    Technology Partnership
+                  <option value="Wellhead Gas Processing">
+                    Wellhead Gas Processing
                   </option>
-                  <option value="Investment & Strategic Cooperation">
-                    Investment &amp; Strategic Cooperation
+                  <option value="Integrated Project Services">
+                    Integrated Project Services
+                  </option>
+                  <option value="Digital Twin and Operating Services">
+                    Digital Twin and Operating Services
+                  </option>
+                  <option value="Project Partnership">
+                    Project Partnership
                   </option>
                 </select>
               </label>
@@ -728,18 +901,23 @@ export default function Home() {
       <footer className="footer">
         <div className="container footer-inner">
           <div>
-<div className="brand">
-  <img src="/logo.png" alt="Titan X Energy" className="brand-logo" />
-</div>
+            <div className="brand">
+              <img
+                src="/logo.png"
+                alt="Titan X Energy"
+                className="brand-logo"
+              />
+            </div>
+
             <p>
-              Modular Refining · Wellhead Gas Monetization · Distributed Power
-              · Digital Energy
+              Customized Modular Refineries · Wellhead Gas Processing ·
+              Integrated Services · Digital Twin
             </p>
           </div>
 
           <div className="footer-bottom">
-            <span>FROM WELLHEAD TO MARKET</span>
-            <span>© {new Date().getFullYear()} Titan X Energy</span>
+            <span>TITAN X ENERGY</span>
+            <span>© 2026 Titan X Energy. All rights reserved.</span>
           </div>
         </div>
       </footer>

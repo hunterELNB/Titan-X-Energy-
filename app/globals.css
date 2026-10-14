@@ -445,14 +445,15 @@ TWO COLUMN
 PROCESS
 ========================= */
 
+
 .process-box {
   padding: 35px;
-  border: 1px solid var(--line-light);
-  background: var(--light-card);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #171717;
 }
 
 .process-box > span {
-  color: var(--accent-dark);
+  color: var(--accent);
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 2px;
@@ -460,14 +461,15 @@ PROCESS
 
 .process-box p {
   margin: 18px 0;
-  color: var(--text-dark);
+  color: #ffffff;
   font-weight: 700;
   line-height: 1.9;
 }
 
 .process-box strong {
-  color: var(--accent-dark);
+  color: var(--accent);
 }
+
 
 /* =========================
 WELLHEAD GAS

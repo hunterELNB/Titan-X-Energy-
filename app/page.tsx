@@ -62,7 +62,7 @@ export default function Home() {
           <a href="#home" className="brand">
             <img
               src="/logo.png"
-              alt="Titan X Energy"
+              alt="TitanX Energy"
               className="brand-logo"
             />
           </a>
@@ -88,7 +88,7 @@ export default function Home() {
         />
 
         <div className="container hero-content">
-          <div className="kicker">TITAN X ENERGY</div>
+          <div className="kicker">TitanX ENERGY</div>
 
           <h1>Customized Modular Oil and Gas Processing Facilities</h1>
 
@@ -98,7 +98,7 @@ export default function Home() {
           </p>
 
           <p className="hero-description">
-            Titan X Energy focuses on providing customers with customized,
+            TitanX Energy focuses on providing customers with customized,
             modular crude oil refining and wellhead gas processing facilities,
             together with related services, at oil and gas fields or other
             locations with convenient logistics access.
@@ -130,7 +130,7 @@ export default function Home() {
             <span className="eyebrow">OUR CORE OFFERINGS</span>
             <h2>Customized Facilities. Integrated Services.</h2>
             <p>
-              Titan X Energy connects customized processing facilities with
+              TitanX Energy connects customized processing facilities with
               coordinated technical, supply chain, project delivery, and
               digital operating services.
             </p>
@@ -245,7 +245,7 @@ export default function Home() {
             <span className="eyebrow">MODULAR REFINERIES</span>
             <h2>Modular Refining Designed Around Your Requirements</h2>
             <p>
-              Titan X Energy develops customized modular refinery solutions
+              TitanX Energy develops customized modular refinery solutions
               for deployment at oilfields or other suitable locations with
               efficient logistics access. The process configuration is selected
               to match the crude oil characteristics, required throughput,
@@ -349,7 +349,7 @@ export default function Home() {
             <span className="eyebrow">WELLHEAD GAS</span>
             <h2>Customized Modular Wellhead Gas Processing</h2>
             <p>
-              Titan X Energy develops modular wellhead gas treatment and
+              TitanX Energy develops modular wellhead gas treatment and
               processing configurations based on gas composition, pressure,
               flow rate, site conditions, and the intended downstream
               application.
@@ -413,7 +413,7 @@ export default function Home() {
             <span className="eyebrow">INTEGRATED SOLUTIONS</span>
             <h2>Vertically Integrated Solutions</h2>
             <p>
-              Titan X Energy coordinates the engineering, equipment supply,
+              TitanX Energy coordinates the engineering, equipment supply,
               project delivery, and operating support required to develop
               customized modular oil and gas processing facilities. This
               vertically integrated service approach connects decisions across
@@ -521,7 +521,7 @@ export default function Home() {
             <span className="eyebrow">SERVICES</span>
             <h2>Integrated Services Across the Project Lifecycle</h2>
             <p>
-              Titan X Energy provides customized technical proposals,
+              TitanX Energy provides customized technical proposals,
               optimized supply chain management, project management, and
               digital twin based operating services for modular refining and
               wellhead gas processing projects.
@@ -586,7 +586,7 @@ export default function Home() {
               DIGITAL OPERATING SUPPORT
             </strong>
             <p>
-              Customers can engage Titan X Energy for an individual service or
+              Customers can engage TitanX Energy for an individual service or
               an integrated project package. Scope, deliverables,
               responsibilities, and service arrangements are defined for each
               engagement.
@@ -610,7 +610,7 @@ export default function Home() {
               Digital Tools for Proposals, Project Management and Operations
             </h2>
             <p>
-              Titan X Energy&apos;s digital twin approach supports three
+              TitanX Energy&apos;s digital twin approach supports three
               connected activities: developing customized technical proposals,
               managing project information and delivery, and establishing the
               facility&apos;s operating architecture.
@@ -719,7 +719,7 @@ export default function Home() {
             <span className="eyebrow">PROJECTS</span>
             <h2>Project Development and Collaboration</h2>
             <p>
-              Titan X Energy works with customers and project partners to
+              TitanX Energy works with customers and project partners to
               evaluate opportunities for customized modular refining and
               wellhead gas processing facilities.
             </p>
@@ -782,7 +782,7 @@ export default function Home() {
       {/* BRAND MESSAGE */}
       <section className="brand-statement">
         <div className="container">
-          <span className="eyebrow">TITAN X ENERGY</span>
+          <span className="eyebrow">TitanX ENERGY</span>
           <h2>FROM REQUIREMENTS TO OPERATIONS</h2>
           <p>
             Customized modular refining and wellhead gas processing facilities,
@@ -795,7 +795,7 @@ export default function Home() {
       <section className="section contact-section" id="contact">
         <div className="container contact-grid">
           <div className="contact-copy">
-            <span className="eyebrow">CONTACT TITAN X ENERGY</span>
+            <span className="eyebrow">CONTACT TitanX ENERGY</span>
             <h2>Tell Us About Your Project</h2>
             <p>
               Share your feedstock information, proposed location, required
@@ -904,7 +904,7 @@ export default function Home() {
             <div className="brand">
               <img
                 src="/logo.png"
-                alt="Titan X Energy"
+                alt="TitanX Energy"
                 className="brand-logo"
               />
             </div>
@@ -916,8 +916,8 @@ export default function Home() {
           </div>
 
           <div className="footer-bottom">
-            <span>TITAN X ENERGY</span>
-            <span>© 2026 Titan X Energy. All rights reserved.</span>
+            <span>TitanX ENERGY</span>
+            <span>© 2026 TitanX Energy. All rights reserved.</span>
           </div>
         </div>
       </footer>

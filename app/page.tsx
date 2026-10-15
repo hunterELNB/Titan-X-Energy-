@@ -7,6 +7,7 @@ import "./globals.css";
 export default function Home() {
   const [status, setStatus] = useState("");
   const [sending, setSending] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -56,29 +57,50 @@ export default function Home() {
 
   return (
     <main>
-      {/* NAVIGATION */}
-      <header className="nav">
-        <div className="container nav-inner">
-          <a href="#home" className="brand">
-            <img
-              src="/logo.png"
-              alt="TitanX Energy"
-              className="brand-logo"
-            />
-          </a>
+    
 
-          <nav className="nav-links">
-            <a href="#home">HOME</a>
-            <a href="#refining">MODULAR REFINERIES</a>
-            <a href="#wellhead-gas">WELLHEAD GAS</a>
-            <a href="#solutions">INTEGRATED SOLUTIONS</a>
-            <a href="#services">SERVICES</a>
-            <a href="#digital-twin">DIGITAL TWIN</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#contact">CONTACT</a>
-          </nav>
-        </div>
-      </header>
+
+{/* NAVIGATION */}
+<header className="nav">
+  <div className="container nav-inner">
+    <a
+      href="#home"
+      className="brand"
+      onClick={() => setMenuOpen(false)}
+    >
+      <img
+        src="/logo.png"
+        alt="TitanX Energy"
+        className="brand-logo"
+      />
+    </a>
+
+    <button
+      type="button"
+      className="mobile-menu-toggle"
+      aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+      aria-expanded={menuOpen}
+      onClick={() => setMenuOpen((open) => !open)}
+    >
+      <span />
+      <span />
+      <span />
+    </button>
+
+    <nav className={`nav-links${menuOpen ? " nav-links-open" : ""}`}>
+      <a href="#home" onClick={() => setMenuOpen(false)}>HOME</a>
+      <a href="#refining" onClick={() => setMenuOpen(false)}>MODULAR REFINERIES</a>
+      <a href="#wellhead-gas" onClick={() => setMenuOpen(false)}>WELLHEAD GAS</a>
+      <a href="#solutions" onClick={() => setMenuOpen(false)}>INTEGRATED SOLUTIONS</a>
+      <a href="#services" onClick={() => setMenuOpen(false)}>SERVICES</a>
+      <a href="#digital-twin" onClick={() => setMenuOpen(false)}>DIGITAL TWIN</a>
+      <a href="#projects" onClick={() => setMenuOpen(false)}>PROJECTS</a>
+      <a href="#contact" onClick={() => setMenuOpen(false)}>CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+
 
       {/* HOME */}
       <section className="hero" id="home">

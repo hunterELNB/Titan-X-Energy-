@@ -584,17 +584,30 @@ export default function DigitalTwinPage() {
         }
       `}</style>
 
-      <header className="dt-header">
-        <a className="dt-brand" href="/">
-          TITAN X <span>ENERGY</span>
-        </a>
-        <div className="dt-header-right">
-          <span className="dt-demo-badge">SIMULATION ENVIRONMENT</span>
-          <a className="dt-back-link" href="/">
-            Corporate Website ↗
-          </a>
-        </div>
-      </header>
+
+<header className="dt-header">
+  <a
+    href="/"
+    className="brand"
+    aria-label="Titan X Energy - Back to Homepage"
+  >
+    <img
+      src="/logo.png"
+      alt="Titan X Energy"
+      className="brand-logo"
+    />
+  </a>
+
+  <div className="dt-header-right">
+    <span className="dt-demo-badge">
+      SIMULATION ENVIRONMENT
+    </span>
+    <a className="dt-back-link" href="/">
+      Corporate Website ↗
+    </a>
+  </div>
+</header>
+
 
       <section className="dt-intro">
         <div className="dt-eyebrow">DIGITAL OPERATIONS PLATFORM</div>

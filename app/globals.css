@@ -1292,3 +1292,1452 @@ RESPONSIVE
   }
 }
 
+
+
+/* =========================
+   TITAN X DIGITAL TWIN
+   ========================= */
+
+.dt-shell {
+  min-height: 100vh;
+  background: #0b1117;
+  color: #f5f7f8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dt-header {
+  min-height: 76px;
+  padding: 16px 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: #080d12;
+}
+
+.dt-brand {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.dt-brand span {
+  color: #d6a84f;
+}
+
+.dt-header-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.dt-demo-badge,
+.dt-mode-label,
+.dt-model-tag {
+  color: #d6a84f;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.dt-back-link {
+  font-size: 12px;
+  color: #e3e9ed;
+}
+
+.dt-back-link:hover {
+  color: #d6a84f;
+}
+
+.dt-intro {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 52px 4% 34px;
+}
+
+.dt-eyebrow,
+.dt-panel-kicker {
+  color: #d6a84f;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.dt-intro h1 {
+  margin: 12px 0;
+  font-size: clamp(34px, 5vw, 54px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+.dt-intro p {
+  max-width: 760px;
+  margin: 0;
+  color: #aeb9c1;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.dt-workspace {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 4% 48px;
+  display: grid;
+  grid-template-columns: 255px minmax(0, 1fr);
+  gap: 24px;
+}
+
+.dt-sidebar,
+.dt-main-panel {
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #111a23;
+}
+
+.dt-sidebar {
+  padding: 20px 14px;
+  align-self: start;
+}
+
+.dt-sidebar-label {
+  padding: 4px 8px 18px;
+  color: #aeb9c1;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.dt-scene-button {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 10px;
+  margin-bottom: 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #e8edf0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dt-scene-button:hover {
+  background: #18232d;
+}
+
+.dt-scene-button.active {
+  border-color: rgba(214, 168, 79, 0.65);
+  background: #202a32;
+}
+
+.dt-scene-number {
+  color: #d6a84f;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.dt-scene-button strong,
+.dt-scene-button small {
+  display: block;
+}
+
+.dt-scene-button strong {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.dt-scene-button small {
+  margin-top: 5px;
+  color: #aeb9c1;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.dt-sidebar-note {
+  margin-top: 28px;
+  padding: 16px 10px 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #dce3e8;
+  font-size: 12px;
+}
+
+.dt-status-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: #d6a84f;
+}
+
+.dt-sidebar-note p {
+  color: #aeb9c1;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.dt-main-panel {
+  padding: 24px;
+}
+
+.dt-panel-heading,
+.dt-visual-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.dt-panel-heading h2 {
+  margin: 8px 0 0;
+  font-size: clamp(20px, 2.4vw, 29px);
+  line-height: 1.3;
+}
+
+.dt-mode-label,
+.dt-model-tag {
+  padding: 7px 9px;
+  border: 1px solid rgba(214, 168, 79, 0.4);
+  white-space: nowrap;
+}
+
+.dt-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.dt-metric {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #17212b;
+}
+
+.dt-metric > span,
+.dt-metric > small {
+  display: block;
+  color: #aeb9c1;
+  font-size: 11px;
+}
+
+.dt-metric > strong {
+  display: block;
+  margin: 13px 0 8px;
+  font-size: 24px;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.dt-metric > strong small {
+  color: #aeb9c1;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.dt-metric .dt-operational {
+  color: #d6a84f;
+  font-size: 19px;
+}
+
+
+.dt-visual-panel {
+  position: relative;
+  margin-top: 22px;
+  padding: 24px;
+  border: 1px solid rgba(107, 190, 220, 0.22);
+  border-radius: 16px;
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(28, 91, 117, 0.18),
+      transparent 58%
+    ),
+    linear-gradient(145deg, #101d29 0%, #0b131c 55%, #0a1119 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.035),
+    0 18px 48px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+}
+
+
+.dt-visual-top h3 {
+  margin: 7px 0 0;
+  font-size: 17px;
+}
+
+
+.dt-placeholder {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 22px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  text-align: left;
+  border: 1px solid rgba(214, 168, 79, 0.24);
+  border-radius: 12px;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(214, 168, 79, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(214, 168, 79, 0.025) 1px, transparent 1px),
+    #101922;
+  background-size: 28px 28px;
+}
+
+
+.dt-blueprint-icon {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #d6a84f;
+  color: #d6a84f;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.dt-placeholder h4 {
+  margin: 20px 0 8px;
+  font-size: 18px;
+}
+
+.dt-placeholder > p {
+  max-width: 520px;
+  margin: 0;
+  color: #aeb9c1;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.dt-equipment-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.dt-equipment-list span {
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #18232d;
+  color: #e3e9ed;
+  font-size: 10px;
+}
+
+.dt-bottom-note {
+  margin-top: 22px;
+  padding: 18px;
+  border-left: 3px solid #d6a84f;
+  background: #17212b;
+}
+
+.dt-bottom-note strong {
+  color: #d6a84f;
+  font-size: 10px;
+  letter-spacing: 1.2px;
+}
+
+.dt-bottom-note p {
+  margin: 8px 0 0;
+  color: #c0cad1;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.dt-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 4%;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #aeb9c1;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+@media (max-width: 1050px) {
+  .dt-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .dt-sidebar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .dt-sidebar-label,
+  .dt-sidebar-note {
+    grid-column: 1 / -1;
+  }
+
+  .dt-sidebar-note {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .dt-header {
+    align-items: flex-start;
+  }
+
+  .dt-header-right {
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .dt-demo-badge {
+    font-size: 8px;
+    text-align: right;
+  }
+
+  .dt-intro {
+    padding-top: 36px;
+  }
+
+  .dt-workspace {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .dt-main-panel {
+    padding: 15px;
+  }
+
+  .dt-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dt-panel-heading,
+  .dt-visual-top {
+    flex-direction: column;
+  }
+
+  .dt-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .dt-sidebar-label,
+  .dt-sidebar-note {
+    grid-column: auto;
+  }
+
+  .dt-footer {
+    flex-direction: column;
+  }
+}
+
+
+
+/* Operating scenario controls */
+.dt-mode-controls {
+  margin: 22px 0;
+  padding: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.45);
+}
+
+.dt-mode-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.dt-mode-button {
+  padding: 10px 14px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #111c2a;
+  color: #cbd5e1;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.dt-mode-button:hover {
+  border-color: #38bdf8;
+}
+
+.dt-mode-button.active {
+  border-color: #38bdf8;
+  background: rgba(14, 165, 233, 0.16);
+  color: #7dd3fc;
+}
+
+.dt-alarm {
+  color: #fb7185 !important;
+}
+
+
+
+
+/* Equipment selection buttons */
+.dt-equipment-button {
+  position: relative;
+  padding: 12px 16px;
+  border: 1px solid rgba(112, 164, 190, 0.22);
+  border-radius: 8px;
+  background: linear-gradient(
+    145deg,
+    rgba(23, 39, 53, 0.96),
+    rgba(12, 23, 34, 0.96)
+  );
+  color: #a9bdca;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    color 0.2s ease;
+}
+
+.dt-equipment-button:hover {
+  border-color: rgba(56, 189, 248, 0.7);
+  background: linear-gradient(
+    145deg,
+    rgba(25, 55, 73, 0.98),
+    rgba(12, 30, 44, 0.98)
+  );
+  color: #e0f5ff;
+}
+
+.dt-equipment-button.active {
+  border-color: rgba(56, 189, 248, 0.9);
+  background: linear-gradient(
+    145deg,
+    rgba(14, 116, 144, 0.28),
+    rgba(12, 30, 44, 0.98)
+  );
+  color: #8be4ff;
+  box-shadow:
+    inset 0 0 18px rgba(56, 189, 248, 0.07),
+    0 0 14px rgba(56, 189, 248, 0.08);
+}
+
+
+
+/* Alarm and fault management panel */
+.dt-alarm-empty {
+  padding: 24px 16px;
+  border: 1px solid rgba(52, 211, 153, 0.2);
+  border-radius: 10px;
+  background: rgba(16, 185, 129, 0.06);
+}
+
+.dt-alarm-empty strong {
+  color: #34d399;
+  font-size: 14px;
+}
+
+.dt-alarm-empty p {
+  margin: 8px 0 0;
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.dt-alarm-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.dt-alarm-card {
+  padding: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-left: 3px solid #f59e0b;
+  border-radius: 10px;
+  background: rgba(15, 23, 42, 0.58);
+}
+
+.dt-alarm-card:has(.dt-severity-critical) {
+  border-left-color: #fb7185;
+}
+
+.dt-alarm-card-top,
+.dt-alarm-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.dt-alarm-card h4 {
+  margin: 9px 0 0;
+  color: #f1f5f9;
+  font-size: 15px;
+}
+
+.dt-severity {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.dt-severity-critical {
+  color: #fda4af;
+  background: rgba(244, 63, 94, 0.14);
+}
+
+.dt-severity-warning {
+  color: #fcd34d;
+  background: rgba(245, 158, 11, 0.14);
+}
+
+.dt-severity-info {
+  color: #7dd3fc;
+  background: rgba(14, 165, 233, 0.14);
+}
+
+.dt-alarm-time {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.dt-alarm-card p {
+  margin: 12px 0 0;
+  color: #cbd5e1;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.dt-alarm-message {
+  color: #f8fafc !important;
+  font-weight: 600;
+}
+
+.dt-alarm-card p strong {
+  color: #94a3b8;
+}
+
+.dt-alarm-card-bottom {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.dt-alarm-card-bottom > span {
+  color: #fbbf24;
+  font-size: 11px;
+}
+
+.dt-ack-button {
+  padding: 9px 13px;
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  border-radius: 7px;
+  background: rgba(14, 165, 233, 0.12);
+  color: #7dd3fc;
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.dt-ack-button:hover:not(:disabled) {
+  background: rgba(14, 165, 233, 0.24);
+}
+
+.dt-ack-button:disabled {
+  border-color: rgba(52, 211, 153, 0.25);
+  background: rgba(16, 185, 129, 0.08);
+  color: #34d399;
+  cursor: default;
+}
+
+
+
+/* Alarm event history */
+.dt-history-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+.dt-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 12px;
+}
+
+.dt-history-table th {
+  padding: 12px 10px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+  color: #94a3b8;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dt-history-table td {
+  padding: 13px 10px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+  color: #cbd5e1;
+  white-space: nowrap;
+}
+
+.dt-history-active {
+  color: #fb7185;
+  font-weight: 600;
+}
+
+.dt-history-cleared {
+  color: #34d399;
+  font-weight: 600;
+}
+
+
+/* Interactive process flow diagram */
+.dt-process-flow {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  padding: 24px 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.dt-flow-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 130px;
+}
+
+
+.dt-flow-node {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+  min-height: 132px;
+  padding: 16px;
+  overflow: hidden;
+  color: #d3e1eb;
+  text-align: left;
+  background:
+    radial-gradient(
+      ellipse at 100% 0%,
+      rgba(56, 189, 248, 0.10),
+      transparent 60%
+    ),
+    linear-gradient(145deg, #172735 0%, #101b27 52%, #0b141e 100%);
+  border: 1px solid rgba(103, 164, 192, 0.32);
+  border-radius: 10px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.045),
+    inset 0 -18px 30px rgba(0, 0, 0, 0.12),
+    0 8px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.dt-flow-node::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: rgba(56, 189, 248, 0.65);
+  opacity: 0.65;
+}
+
+.dt-flow-node:hover {
+  border-color: rgba(56, 189, 248, 0.8);
+  background:
+    radial-gradient(
+      ellipse at 100% 0%,
+      rgba(56, 189, 248, 0.17),
+      transparent 65%
+    ),
+    linear-gradient(145deg, #1b3445, #101d2a 65%, #0c1722);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 0 22px rgba(56, 189, 248, 0.09);
+  transform: translateY(-3px);
+}
+
+.dt-flow-node.selected {
+  border: 1px solid #38bdf8;
+  background:
+    radial-gradient(
+      ellipse at 100% 0%,
+      rgba(56, 189, 248, 0.23),
+      transparent 65%
+    ),
+    linear-gradient(145deg, #19394d, #102435 65%, #0d1a26);
+  color: #f0faff;
+  box-shadow:
+    inset 0 0 24px rgba(56, 189, 248, 0.06),
+    0 0 0 1px rgba(56, 189, 248, 0.12),
+    0 0 20px rgba(56, 189, 248, 0.10);
+}
+
+.dt-flow-node-number {
+  color: #56d7ff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+
+.dt-flow-arrow {
+  flex: 0 0 auto;
+  color: #38bdf8;
+  font-size: 24px;
+  font-weight: 700;
+  animation: dt-flow-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes dt-flow-pulse {
+  0% {
+    opacity: 0.45;
+    transform: translateX(-2px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateX(2px);
+  }
+
+  100% {
+    opacity: 0.45;
+    transform: translateX(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dt-flow-arrow {
+    animation: none;
+  }
+}
+
+
+.dt-flow-node.has-alarm {
+  border-color: #f87171;
+  background: #3b1d27;
+}
+
+.dt-flow-node.has-alarm.selected {
+  border: 2px solid #f87171;
+}
+
+.dt-flow-alarm-label {
+  color: #fca5a5;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .dt-process-flow {
+    gap: 8px;
+  }
+
+  .dt-flow-step {
+    gap: 8px;
+    flex-basis: 120px;
+  }
+
+  .dt-flow-node {
+    min-height: 100px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .dt-flow-arrow {
+    font-size: 20px;
+  }
+}
+
+
+.dt-flow-node.degraded {
+  border-color: #fbbf24;
+  background: #3a3018;
+}
+
+.dt-flow-node.degraded .dt-flow-node-number {
+  color: #fbbf24;
+}
+
+.dt-flow-node.degraded.selected {
+  border: 2px solid #fbbf24;
+}
+
+
+.dt-operation-status {
+  display: inline-flex;
+  align-items: center;
+  margin: 12px 0;
+  padding: 7px 12px;
+  border: 1px solid #475569;
+  border-radius: 6px;
+  background: #172033;
+  color: #cbd5e1;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.dt-operation-status.normal {
+  border-color: #34d399;
+  color: #6ee7b7;
+}
+
+.dt-operation-status.abnormal {
+  border-color: #f87171;
+  color: #fca5a5;
+}
+
+.dt-operation-status.degraded {
+  border-color: #fbbf24;
+  color: #fcd34d;
+}
+
+
+/* Industrial equipment silhouettes */
+.dt-equipment-art {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 58px;
+  flex: 0 0 58px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(100, 190, 220, 0.12);
+  background: radial-gradient(
+    ellipse at 50% 80%,
+    rgba(56, 189, 248, 0.10),
+    transparent 70%
+  );
+}
+
+.dt-art-main,
+.dt-art-detail,
+.dt-art-base {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+}
+
+.dt-art-main {
+  left: 50%;
+  top: 8px;
+  width: 38px;
+  height: 34px;
+  transform: translateX(-50%);
+  border: 2px solid #7294a8;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #385467, #152634);
+  box-shadow: inset 0 0 10px rgba(56, 189, 248, 0.10);
+}
+
+.dt-art-detail {
+  left: 50%;
+  top: 15px;
+  width: 16px;
+  height: 16px;
+  transform: translateX(-50%);
+  border: 2px solid #56c8ed;
+  border-radius: 50%;
+}
+
+.dt-art-base {
+  left: 50%;
+  bottom: 7px;
+  width: 52px;
+  height: 4px;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  background: #587588;
+}
+
+/* 01 — Wellhead inlet: pipes and valve */
+.dt-equipment-art-1 .dt-art-main {
+  top: 19px;
+  width: 48px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.dt-equipment-art-1 .dt-art-detail {
+  top: 8px;
+  width: 18px;
+  height: 28px;
+  border-radius: 4px;
+}
+
+.dt-equipment-art-1 .dt-art-base {
+  width: 60px;
+}
+
+/* 02 — Gas treatment: vertical separator vessel */
+.dt-equipment-art-2 .dt-art-main {
+  top: 4px;
+  width: 26px;
+  height: 43px;
+  border-radius: 12px 12px 5px 5px;
+  background: linear-gradient(90deg, #263e4d, #648396, #263e4d);
+}
+
+.dt-equipment-art-2 .dt-art-detail {
+  top: 17px;
+  width: 34px;
+  height: 2px;
+  border: 0;
+  border-radius: 0;
+  background: #56c8ed;
+}
+
+.dt-equipment-art-2 .dt-art-base {
+  width: 42px;
+}
+
+/* 03 — Compressor: motor and rotor */
+.dt-equipment-art-3 .dt-art-main {
+  top: 12px;
+  width: 44px;
+  height: 27px;
+  border-radius: 6px;
+}
+
+.dt-equipment-art-3 .dt-art-detail {
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #56c8ed;
+  box-shadow: inset 0 0 0 4px #243f50;
+}
+
+.dt-equipment-art-3 .dt-art-base {
+  width: 58px;
+}
+
+/* 04 — Power generation: generator housing */
+.dt-equipment-art-4 .dt-art-main {
+  top: 12px;
+  width: 46px;
+  height: 29px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #526c7a, #1b2e3b);
+}
+
+.dt-equipment-art-4 .dt-art-detail {
+  top: 18px;
+  width: 19px;
+  height: 17px;
+  border-radius: 3px;
+  border-color: #56c8ed;
+}
+
+.dt-equipment-art-4 .dt-art-base {
+  width: 58px;
+}
+
+/* 05 — Electrical output: transformer */
+.dt-equipment-art-5 .dt-art-main {
+  top: 13px;
+  width: 40px;
+  height: 27px;
+  border-radius: 3px;
+  background: repeating-linear-gradient(
+    90deg,
+    #263e4d 0,
+    #263e4d 5px,
+    #587588 6px,
+    #587588 8px
+  );
+}
+
+.dt-equipment-art-5 .dt-art-detail {
+  top: 5px;
+  width: 5px;
+  height: 13px;
+  border: 0;
+  border-radius: 2px;
+  background: #56c8ed;
+  box-shadow:
+    -12px 0 0 #7294a8,
+    12px 0 0 #7294a8;
+}
+
+.dt-equipment-art-5 .dt-art-base {
+  width: 54px;
+}
+
+.dt-flow-node-name {
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #e0edf5;
+}
+
+.dt-flow-node {
+  gap: 8px;
+  min-height: 178px;
+}
+
+@media (max-width: 768px) {
+  .dt-flow-node {
+    min-height: 164px;
+  }
+
+  .dt-equipment-art {
+    height: 50px;
+    flex-basis: 50px;
+  }
+}
+
+
+
+.dt-facility-hero {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+  border: 1px solid rgba(214, 168, 79, 0.28);
+  border-radius: 10px;
+  background: #0b1118;
+  margin-bottom: 22px;
+}
+
+.dt-facility-hero img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.dt-facility-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 30px;
+  text-align: left;
+  background: linear-gradient(
+    180deg,
+    rgba(7, 13, 20, 0.02) 20%,
+    rgba(7, 13, 20, 0.35) 55%,
+    rgba(7, 13, 20, 0.92) 100%
+  );
+}
+
+.dt-facility-hero-tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #e3bd72;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.dt-facility-hero-overlay h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(22px, 3vw, 34px);
+  line-height: 1.2;
+  font-weight: 650;
+}
+
+.dt-facility-hero-overlay p {
+  margin: 10px 0 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 640px) {
+  .dt-facility-hero {
+    height: 260px;
+  }
+
+  .dt-facility-hero-overlay {
+    padding: 18px;
+  }
+
+  .dt-facility-hero-overlay p {
+    font-size: 11px;
+  }
+}
+
+
+/* =========================
+   INDUSTRIAL SCADA INSTRUMENTS
+   ========================= */
+
+.dt-equipment-instruments,
+.dt-process-instruments {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.dt-instrument {
+  position: relative;
+  min-width: 0;
+  min-height: 235px;
+  padding: 18px 16px 16px;
+  overflow: hidden;
+  border: 1px solid rgba(126, 164, 187, 0.25);
+  border-radius: 8px;
+  background:
+    linear-gradient(rgba(105, 153, 179, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(105, 153, 179, 0.035) 1px, transparent 1px),
+    linear-gradient(145deg, #172632, #101923 72%);
+  background-size: 18px 18px, 18px 18px, auto;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.035),
+    0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.dt-instrument::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #55b8c8;
+  opacity: 0.8;
+}
+
+.dt-instrument-warning::before {
+  background: #e5b454;
+}
+
+.dt-instrument-critical::before {
+  background: #ef6464;
+}
+
+.dt-instrument-label {
+  color: #a8bdca;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  line-height: 1.5;
+}
+
+.dt-gauge-svg {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  height: 150px;
+  margin: 8px auto -2px;
+  overflow: visible;
+}
+
+.dt-instrument-reading {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 7px;
+  margin-top: -5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.dt-instrument-reading strong {
+  color: #f0f6f9;
+  font-size: clamp(25px, 2.5vw, 34px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+}
+
+.dt-instrument-reading span {
+  color: #80a2b4;
+  font-size: 12px;
+}
+
+.dt-instrument-range {
+  margin-top: 12px;
+  color: #718b9b;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.dt-status-reading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 115px;
+}
+
+.dt-status-reading strong {
+  font-size: clamp(17px, 2vw, 23px);
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.dt-status-lamp {
+  position: relative;
+  flex: 0 0 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #55c89a;
+  box-shadow:
+    0 0 0 4px rgba(85, 200, 154, 0.12),
+    0 0 16px rgba(85, 200, 154, 0.35);
+}
+
+.dt-status-lamp.warning {
+  background: #e5b454;
+  box-shadow:
+    0 0 0 4px rgba(229, 180, 84, 0.12),
+    0 0 16px rgba(229, 180, 84, 0.3);
+}
+
+.dt-status-lamp.critical {
+  background: #ef6464;
+  box-shadow:
+    0 0 0 4px rgba(239, 100, 100, 0.12),
+    0 0 16px rgba(239, 100, 100, 0.35);
+}
+
+.dt-health-reading,
+.dt-range-reading {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  margin: 28px 0 20px;
+  font-variant-numeric: tabular-nums;
+}
+
+.dt-health-reading strong,
+.dt-range-reading strong {
+  color: #eaf2f6;
+  font-size: clamp(30px, 3vw, 40px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.dt-health-reading span,
+.dt-range-reading span {
+  color: #8ca4b3;
+  font-size: 12px;
+}
+
+.dt-health-track,
+.dt-range-track {
+  width: 100%;
+  height: 7px;
+  overflow: hidden;
+  border: 1px solid rgba(148, 177, 195, 0.16);
+  border-radius: 2px;
+  background: #0a121a;
+}
+
+.dt-health-fill,
+.dt-range-fill {
+  height: 100%;
+  min-width: 0;
+  background: #55b8c8;
+  box-shadow: 0 0 10px rgba(85, 184, 200, 0.25);
+  transition: width 0.35s ease;
+}
+
+.dt-health-fill.warning,
+.dt-range-fill.warning {
+  background: #e5b454;
+  box-shadow: 0 0 10px rgba(229, 180, 84, 0.22);
+}
+
+.dt-health-fill.critical,
+.dt-range-fill.critical {
+  background: #ef6464;
+  box-shadow: 0 0 10px rgba(239, 100, 100, 0.25);
+}
+
+.dt-warning {
+  color: #e5b454 !important;
+}
+
+.dt-operational {
+  color: #55c89a !important;
+}
+
+.dt-alarm {
+  color: #ef6464 !important;
+}
+
+/* Process panel: three gauges and three digital readouts */
+.dt-process-instruments .dt-instrument {
+  min-height: 235px;
+}
+
+.dt-process-instruments .dt-range-instrument {
+  min-height: 190px;
+}
+
+.dt-process-instruments .dt-range-reading {
+  margin-top: 32px;
+}
+
+@media (max-width: 1100px) {
+  .dt-equipment-instruments,
+  .dt-process-instruments {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .dt-equipment-instruments,
+  .dt-process-instruments {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .dt-instrument {
+    min-height: 220px;
+    padding: 17px;
+  }
+
+  .dt-gauge-svg {
+    max-width: 230px;
+    height: 155px;
+  }
+
+  .dt-status-reading {
+    min-height: 90px;
+  }
+
+  .dt-health-reading,
+  .dt-range-reading {
+    margin-top: 22px;
+  }
+}
+

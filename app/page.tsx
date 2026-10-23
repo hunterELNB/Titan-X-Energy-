@@ -639,6 +639,54 @@ export default function Home() {
             </p>
           </div>
 
+
+<div
+  style={{
+    textAlign: "center",
+    margin: "30px 0 45px",
+  }}
+>
+  <p
+    style={{
+      fontSize: "15px",
+      marginBottom: "20px",
+    }}
+  >
+    Experience our interactive 3D visualization of modular refining
+    and wellhead gas processing facilities.
+  </p>
+
+  <a
+    href="/digital-twin"
+    className="button button-primary"
+    style={{
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
+      gap: "12px",
+      padding: "20px 38px",
+      fontSize: "16px",
+      fontWeight: 700,
+      letterSpacing: "0.5px",
+      boxShadow: "0 8px 28px rgba(0, 120, 220, 0.3)",
+    }}
+  >
+    ▶ LAUNCH INTERACTIVE 3D DEMO
+    <span aria-hidden="true">↗</span>
+  </a>
+
+  <p
+    style={{
+      fontSize: "12px",
+      marginTop: "14px",
+      opacity: 0.7,
+    }}
+  >
+    Interactive Demo · Modular Refining &amp; Wellhead Gas Processing
+  </p>
+</div>
+
+
           <div className="digital-flow">
             <div>CUSTOMER &amp; FEEDSTOCK DATA</div>
             <span>→</span>

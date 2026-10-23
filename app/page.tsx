@@ -112,7 +112,7 @@ export default function Home() {
         <div className="container hero-content">
           <div className="kicker">TitanX ENERGY</div>
 
-          <h1>Customized Modular Oil and Gas Processing Facilities</h1>
+          <h1>Customized Modular Crude Oil Processing & Wellhead-Gas to Power Operations</h1>
 
           <p className="hero-subtitle">
             Modular Refineries · Wellhead Gas Processing · Integrated Project
@@ -120,19 +120,10 @@ export default function Home() {
           </p>
 
           <p className="hero-description">
-            TitanX Energy focuses on providing customers with customized,
-            modular crude oil refining and wellhead gas processing facilities,
-            together with related services, at oil and gas fields or other
-            locations with convenient logistics access.
+            TitanX Energy | Integrated Modular Refining & Wellhead Gas-to-Power Solutions—from Engineering and Supply Chain Integration to Project Delivery and AI-Powered Digital Twin Operations & Maintenance。
           </p>
 
-          <p className="hero-description">
-            Each solution is developed around the customer&apos;s feedstock,
-            production capacity, product specifications, site conditions, and
-            commercial objectives. We integrate technical proposal development,
-            supply chain management, project management, and digital twin based
-            operating services across the project lifecycle.
-          </p>
+          
 
           <div className="hero-actions">
             <a href="#solutions" className="button button-primary">

@@ -110,7 +110,7 @@ export default function Home() {
         />
 
         <div className="container hero-content">
-          <div className="kicker">TitanX ENERGY</div>
+          <div className="kicker">TITANX ENERGY</div>
 
           <h1>Customized Modular Crude Oil Processing & Wellhead-Gas to Power Operations</h1>
 
@@ -120,7 +120,7 @@ export default function Home() {
           </p>
 
           <p className="hero-description">
-            TitanX Energy | Integrated Modular Refining & Wellhead Gas-to-Power Solutions—from Engineering and Supply Chain Integration to Project Delivery and AI-Powered Digital Twin Operations & Maintenance。
+            TitanX Energy | Integrated Modular Refining & Wellhead Gas-to-Power Solutions—from Engineering and Supply Chain Integration to Project Delivery and AI-Powered Digital Twin Operations & Maintenance.
           </p>
 
           
